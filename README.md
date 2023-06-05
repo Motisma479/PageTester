@@ -3,6 +3,10 @@
 {% tabs %}
 {% tab title="TEST" %}
 
+
+```
+// Some code
+```
 {% endtab %}
 
 {% tab title="TEST2" %}
