@@ -1,18 +1,80 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Motisma479</title>
-  </head>
+<head>
+	<meta charset="utf-8">
+	<title>Motisma479</title>
 
-  <body>
-    <h1>Mathieu Robion</h1>
-    <h2>Test non ASCII Char:</h2>
-    <p>
-      ⚠️🗿💀⁂※✓✕éêè
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 
-    </p>
-  </body>
+	<link rel="stylesheet" href="style.css">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		
+			<div class="navigation">
+				<h1>Motisma479</h1>
+				<div class="menuIcon">
+					<i class="fi fi-rr-menu-burger"></i>
+				</div>
+			</div>
+			
+		
+	</header>
+	
+	<div class="navButtons">
+		<nav>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Works</a></li>
+			<li><a href="#">Contact</a></li>
+		</nav>
+	</div>
 
+	<main>	
+		<!-- <div class="mainBlock"> -->
+			<i class="fi fi-rr-user"></i>
+			<a>Hello World !</a>
+			<a>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !
+			</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !
+			</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !
+			</a>
+		<!-- </div> -->
+	</main>
+	
+	<!-- Footer -->
+	<footer>
+		<p class="network"><a href="https://github.com/Motisma479"><i class="fi fi-brands-github"></i>Motisma479</a></p>
+		<p class="network"><a href="https://www.linkedin.com/in/mathieu-robion-128416266/"><i class="fi fi-brands-linkedin"></i>Mathieu Robion</a></p>
+		Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
+	</footer>
+
+</body>
 </html>
+
+<script type="text/javascript"/>
+	var nav = document.getElementsByClassName("navigation");
+	
+	window.onscroll = function sticky(){
+		if(window.pageYOffset > nav[0].offsetTop)
+		{
+			nav[0].classList.add("nav");
+		}
+		else
+		{
+			nav[0].classList.remove("nav");
+		}
+	}
+</script>
+
+<script>
+	$(".menuIcon").click(function(){
+		$(this).toggleClass("active");
+		$(".navButtons").toggleClass("active");
+		$(".navigation").toggleClass("active");
+		$(".menuIcon i").toggleClass("fi-rr-menu-burger fi-rr-cross-small");
+	});
+</script>
