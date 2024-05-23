@@ -7,6 +7,10 @@
 
 	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 
+	<script src="menuIcon.js"></script>
+	
+	<script src="Eye.js"></script>
+
 	<link rel="stylesheet" href="style.css">
 	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
 	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
@@ -15,33 +19,37 @@
 	<!-- Header -->
 	<header>
 		
-			<div class="navigation">
-				<h1>Motisma479</h1>
-				<div class="menuIcon">
-					<i class="fi fi-rr-menu-burger"></i>
-				</div>
+		<div class="navigation">
+			<h1>Motisma479</h1>
+		</div>
+		<div class="IconOnNav">
+			<div class="menuIcon">
+				<i class="fi fi-rr-menu-burger"></i>
 			</div>
-			
-		
+		</div>
+
 	</header>
 	
 	<div class="navButtons">
 		<nav>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Works</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="works.html">Works</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		</nav>
 	</div>
 
 	<main>	
 		<!-- <div class="mainBlock"> -->
-			<i class="fi fi-rr-user"></i>
+			 <div id="svg-container">
+				<!-- SVG content will be included here -->
+			</div>
 			<a>Hello World !</a>
 			<a>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !
 			</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !
 			</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !</br>Hello World !
 			</a>
+		<!-- </div> -->
 		<!-- </div> -->
 	</main>
 	
@@ -54,27 +62,3 @@
 
 </body>
 </html>
-
-<script type="text/javascript"/>
-	var nav = document.getElementsByClassName("navigation");
-	
-	window.onscroll = function sticky(){
-		if(window.pageYOffset > nav[0].offsetTop)
-		{
-			nav[0].classList.add("nav");
-		}
-		else
-		{
-			nav[0].classList.remove("nav");
-		}
-	}
-</script>
-
-<script>
-	$(".menuIcon").click(function(){
-		$(this).toggleClass("active");
-		$(".navButtons").toggleClass("active");
-		$(".navigation").toggleClass("active");
-		$(".menuIcon i").toggleClass("fi-rr-menu-burger fi-rr-cross-small");
-	});
-</script>
