@@ -25,7 +25,7 @@ main
 
 	color: lime;
 	text-align: center;
-	background-color:#303338;
+	background-color:#262229;
 	background-attachment: fixed;
 }
 /* -------------- FOOTER -------------- */
@@ -474,4 +474,18 @@ footer a:hover
     z-index: 1;
 	width: 100%;
 	left: 0;
+}
+
+@font-face {
+	font-family: 'Elounda';
+	src: url('Elounda-Regular.ttf');
+  }
+  
+
+.EngineName
+{
+	font-size: 90px;
+	color: #785cb4;
+	text-shadow: #785cb4 1px 0 10px;
+	font-family: 'Elounda';
 }
