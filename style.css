@@ -379,7 +379,87 @@ footer a:hover
 
 /* ----------------------------------------------------------------------- */
 
-.projectPreview
+
+
+
+
+
+
+
+
+/* .imageContainer
+{
+	position: relative;
+    height: 100%;
+}
+*/
+
+
+/***********************************************
+                 VIOLET ENGINE                  
+***********************************************/
+
+@font-face {
+	font-family: 'Elounda';
+	src: url('Elounda-Regular.ttf');
+}
+ 
+@font-face {
+   font-family: 'Bubbl';
+   src: url('Bubbl-ExtraBold.otf');
+}
+
+.EngineName
+{
+	font-size: 90px;
+	color: #785cb4;
+	text-shadow: #785cb4 1px 0 10px;
+	font-family: 'Elounda';
+}
+
+.PreviewBlock
+{
+   max-width: 1024px;
+   min-width: 425px;
+
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.Part
+{
+   /* background-color: aqua; */
+   width: 90%;
+
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.PartName
+{
+   font-size: 50px;
+   text-align: left;
+   font-family: 'Bubbl';
+
+   color: #785cb4;
+	text-shadow: #785cb4 1px 0 10px;
+}
+
+.PartContent
+{
+   background-color: #0000002c;
+	border-radius: 25px;
+   padding: 15px;
+   text-align: left;
+   font-size: 20px;
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Image slider */
+
+.Preview
 {
 	padding-top: 25px;
 	margin-bottom: 5px;
@@ -391,8 +471,8 @@ footer a:hover
 	align-items: center;
 }
 
-.previousImage,
-.nextImage
+.PreviousImage,
+.NextImage
 {
 	/* height: 50%; */
 	padding-top: 10%;
@@ -414,14 +494,14 @@ footer a:hover
 	z-index: 2;
 }
 
-.previousImage
+.PreviousImage
 {
 	left: 0;
 	padding-right: 1%;
 	border-radius: 0px 15px 15px 0px;
 }
 
-.nextImage
+.NextImage
 {
 	right: 0;
 	padding-left: 1%;
@@ -429,23 +509,23 @@ footer a:hover
 
 }
 
-.previousImage:hover,
-.nextImage:hover
+.PreviousImage:hover,
+.NextImage:hover
 {
 	padding-top: 11%;
 	padding-bottom: 11%;
 	opacity: 1;
 }
-.previousImage:hover
+.PreviousImage:hover
 {
 	padding-right: 2%;
 }
-.nextImage:hover
+.NextImage:hover
 {
 	padding-left: 2%;
 }
 
-.numberImage
+.NumberImage
 {
 	cursor: default;
 	user-select: none;
@@ -459,33 +539,25 @@ footer a:hover
 	z-index: 2;
 }
 
-/* .imageContainer
+.ImageContainer
 {
-	position: relative;
-    height: 100%;
+   overflow: hidden;
+   border-radius: 25px;
+   position: relative;
+	display: flex;
 }
-*/
-.newImage
+
+.PreviewImage,
+.NewImage
 {
-	position: absolute;
-}
-.newImage {
-	opacity: 0;
-    z-index: 1;
+   z-index: 1;
 	width: 100%;
 	left: 0;
+   border-radius: 25px;
+   object-fit: cover;
 }
-
-@font-face {
-	font-family: 'Elounda';
-	src: url('Elounda-Regular.ttf');
-  }
-  
-
-.EngineName
+.NewImage
 {
-	font-size: 90px;
-	color: #785cb4;
-	text-shadow: #785cb4 1px 0 10px;
-	font-family: 'Elounda';
+   opacity: 0;
+   position: absolute;
 }
