@@ -213,170 +213,6 @@ footer a:hover
 	font-size: 25px;
 }
 
-.projectBlock
-{
-	
-	background: #232428;
-	max-width: 750px;
-	min-width: 425px;
-	margin: 0 auto;
-	
-	/* margin-left : 10%; */
-	/* position: relative; */
-	/* z-index: 10; */
-	border-radius: 25px;
-	color: #f3edd6;
-}
-.projectTitle
-{
-	color: #f3edd6;
-	font-size: 30px;
-	text-align: center;
-
-	transition: .2s linear;
-} 
-
-.projectTitle:hover
-{
-	transform: scale(1.1);
-} 
-
-/* ----------------------------------------------------------------------- */
-
-.LanguagesBlock
-{
-	text-align: left !important;
-	/* display: table-row; */
-	/* box-sizing: border-box; */
-	
-	padding: 16px;
-	/* padding-top: 16px;
-	padding-bottom: 16px; */
-
-	width: 100%;
-
-	border-radius: 25px;
-	background-color: #0d1116;;
-}
-
-.LanguagesTitle
-{
-	font-weight: 600 !important;
-	color: #e6edf3;
-
-	font-size: 20px !important;
-	margin-bottom: 16px !important;
-	margin-top: 0;
-
-	/* display: block; */
-	/* margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
-}
-
-.LanguagesBar
-{
-	display: block;
-	margin-bottom: 8px !important;
-}
-
-.LanguagesList
-{
-    list-style: none !important;
-
-	padding-left: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-
-	/* display: block;
-	margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px; */
-}
-
-.LanguagesList li
-{
-    display: inline !important;
-	text-align: -webkit-match-parent;
-	
-}
-
-.Language
-{
-	display: inline-flex !important;
-	margin-right: 16px !important;
-	align-items: center !important;
-	flex-wrap: nowrap !important;
-}
-
-.LanguageDot
-{
-    margin-right: 8px !important;
-    display: inline-block;
-    overflow: visible !important;
-    vertical-align: text-bottom;
-    fill: currentColor;
-}
-
-.LanguageName
-{
-	font-weight: 600 !important;
-	margin-right: 4px !important;
-	color: #e6edf3 !important;
-}
-
-.LanguagePercentage
-{
-	color: #848d97 !important;
-	font-size: 12px !important;
-}
-
-
-
-.Progress {
-    border-radius: 6px;
-    display: flex;
-    height: 8px;
-    outline: 1px solid #0000;
-    overflow: hidden;
-}
-.Progress-item {
-	outline: 2px solid #0000;
-}
-.Progress-item+.Progress-item {
-	margin-left: 2px;
-}
-
-
-/* ----------------------------------------------------------------------- */
-
-.projectDescription
-{
-	text-align: left;
-
-	padding: 16px;
-	background-color: #18191C;
-}
-
-.projectDescriptionButton
-{
-	height: 30px;
-	text-align: center;
-	line-height: 39px;
-	font-size: 25px;
-	margin-top: 4px;
-	margin-bottom: 16px;
-}
-
-.projectDescriptionButton:hover
-{
-	background-color: #0e001f;
-	border-radius: 0px 0px 30px 30px;
-}
-
 /* ----------------------------------------------------------------------- */
 
 
@@ -411,7 +247,7 @@ footer a:hover
 
 .EngineName
 {
-	font-size: 90px;
+	font-size: 5.6em;
 	color: #785cb4;
 	text-shadow: #785cb4 1px 0 10px;
 	font-family: 'Elounda';
@@ -437,7 +273,7 @@ footer a:hover
 
 .PartName
 {
-   font-size: 50px;
+   font-size: 3em;
    text-align: left;
    font-family: 'Bubbl';
 
@@ -451,11 +287,65 @@ footer a:hover
 	border-radius: 25px;
    padding: 15px;
    text-align: left;
-   font-size: 20px;
    width: 95%;
    margin-left: auto;
    margin-right: auto;
+
+   display: flex;
+   flex-wrap: wrap;
+
+   
 }
+
+.PartContent h3
+{
+   color: #bd95ff;
+
+   font-size: 1.5em;
+   padding-bottom: 10px;
+}
+
+.PartContent p
+{
+   color: #e2d0ff;
+
+   font-size: 1em;
+   font-weight: normal;
+   
+}
+
+/* Install part */
+
+#installReq
+{
+   height: 100%;
+   width: 30%;
+}
+
+#installReqSpe
+{
+   height: 100%;
+   width: 70%;
+}
+
+@media (max-width: 75rem)
+{
+   #installReq
+   {
+      width: 100%;
+      padding-bottom: 15px;
+   }
+   #installReqSpe
+   {
+      width: 100%;
+   }
+}
+
+
+
+
+
+
 
 /* Image slider */
 
